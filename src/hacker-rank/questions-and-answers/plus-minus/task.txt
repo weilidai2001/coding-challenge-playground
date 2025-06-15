@@ -1,55 +1,48 @@
-Given a square matrix, calculate the absolute difference between the sums of its diagonals.
+Given an array of integers, calculate the ratios of its elements that are positive, negative, and zero. Print the decimal value of each fraction on a new line with 6 places after the decimal.
 
-For example, the square matrix  is shown below:
+Note: This challenge introduces precision problems. The test cases are scaled to six decimal places, though answers with absolute error of up to 10^-4 are acceptable.
 
-1 2 3
-4 5 6
-9 8 9  
-The left-to-right diagonal = .
-The right-to-left diagonal = .
-Their absolute difference is .
+Example
 
-Function description
+arr = [1, 1, 0, -1, -1]
 
-Complete the  function with the following parameter:
+There are n = 5 elements: two positive, two negative and one zero. Their ratios are
+2/5 = 0.400000, 2/5 = 0.400000 and 1/5 = 0.200000. Results are printed as:
 
-: a 2-D array of integers
-Return
+0.400000
+0.400000
+0.200000
 
-: the absolute difference in sums along the diagonals
-Input Format
+Function Description
 
-The first line contains a single integer, , the number of rows and columns in the square matrix .
-Each of the next  lines describes a row, , and consists of  space-separated integers .
+Complete the plusMinus function with the following parameter(s):
+- int arr[n]: an array of integers
 
-Constraints
+Print  
+Print the ratios of positive, negative and zero values in the array. Each value should be printed on a separate line with 6 digits after the decimal. The function should not return a value.
+
+Input Format  
+The first line contains an integer, n, the size of the array.  
+The second line contains n space-separated integers that describe arr[n].
+
+Constraints  
+0 < n <= 100  
+-100 <= arr[i] <= 100
 
 Sample Input
 
-STDIN      Function
------      --------
-3           arr[][] sizes n = 3, m = 3
-11 2 4     arr = [[11, 2, 4], [4, 5, 6], [10, 8, -12]]
-4 5 6
-10 8 -12
+STDIN       Function
+-----       --------
+6           arr[] size n = 6
+-4 3 -9 0 4 1   arr = [-4, 3, -9, 0, 4, 1]
+
 Sample Output
 
-15
+0.500000  
+0.333333  
+0.166667
+
 Explanation
 
-The primary diagonal is:
-
-11
-   5
-     -12
-Sum across the primary diagonal: .
-
-The secondary diagonal is:
-
-     4
-   5
-10
-Sum across the secondary diagonal: 
-Difference: 
-
-Note: |x| is the absolute value of x.
+There are 3 positive numbers, 2 negative numbers, and 1 zero in the array.  
+The proportions of occurrence are positive: 3/6 = 0.500000, negative: 2/6 = 0.333333 and zeros: 1/6 = 0.166667.

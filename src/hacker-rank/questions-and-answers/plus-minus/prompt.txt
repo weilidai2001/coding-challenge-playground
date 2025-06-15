@@ -1,2 +1,2 @@
 Prompt:
-using @task.txt write tests and implementation for diagonalDifference
+using @task.txt write tests and implementation for plusMinus
