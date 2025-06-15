@@ -1,4 +1,4 @@
-import { add } from './math';
+import { add } from './hacker-rank/template/implementation';
 
 // Basic TypeScript example
 const greeting: string = 'Hello, TypeScript with ts-node!';
